@@ -1,0 +1,16 @@
+PODS:
+  - MyPaster (1.0.0)
+
+DEPENDENCIES:
+  - MyPaster (from `../`)
+
+EXTERNAL SOURCES:
+  MyPaster:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  MyPaster: fd32458fed6cec9888f15314a0c78defbc3517cb
+
+PODFILE CHECKSUM: d6e407825753e27bf06ae97f3528d5b6a0ec5473
+
+COCOAPODS: 1.0.1

@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'MyPaster_Example' do
+  pod 'MyPaster', :path => '../'
+
+  target 'MyPaster_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

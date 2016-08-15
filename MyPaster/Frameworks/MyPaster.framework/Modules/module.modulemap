@@ -1,0 +1,6 @@
+framework module MyPaster {
+  umbrella header "MyPaster.h"
+
+  export *
+  module * { export * }
+}

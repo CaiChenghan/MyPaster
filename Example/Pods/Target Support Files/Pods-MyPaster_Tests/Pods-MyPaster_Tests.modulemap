@@ -1,0 +1,6 @@
+framework module Pods_MyPaster_Tests {
+  umbrella header "Pods-MyPaster_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

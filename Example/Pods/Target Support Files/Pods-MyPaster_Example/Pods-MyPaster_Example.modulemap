@@ -1,0 +1,6 @@
+framework module Pods_MyPaster_Example {
+  umbrella header "Pods-MyPaster_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
