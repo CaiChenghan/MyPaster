@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BA123C51D61C34B001FCD9E /* MyPaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BA123C41D61C34B001FCD9E /* MyPaster.m */; };
-		1BA123C91D61C36C001FCD9E /* MyPaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BA123C81D61C36C001FCD9E /* MyPaster.framework */; };
 		308CC5EEF86BE324EB1C3625 /* Pods_MyPaster_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0A2A717637A9C2B2A7A03D /* Pods_MyPaster_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -38,9 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BA123C31D61C34B001FCD9E /* MyPaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPaster.h; sourceTree = "<group>"; };
-		1BA123C41D61C34B001FCD9E /* MyPaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPaster.m; sourceTree = "<group>"; };
-		1BA123C81D61C36C001FCD9E /* MyPaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyPaster.framework; sourceTree = "<group>"; };
 		3D49913BD685D3D085B1E87B /* Pods_MyPaster_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyPaster_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C21E1FBC38FAE9C15A62EEE /* Pods-MyPaster_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyPaster_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyPaster_Tests/Pods-MyPaster_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MyPaster_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPaster_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,7 +74,6 @@
 			files = (
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
-				1BA123C91D61C36C001FCD9E /* MyPaster.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				308CC5EEF86BE324EB1C3625 /* Pods_MyPaster_Example.framework in Frameworks */,
 			);
@@ -99,27 +93,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1BA123C11D61C336001FCD9E /* Class */ = {
-			isa = PBXGroup;
-			children = (
-				1BA123C21D61C34B001FCD9E /* MyPaster */,
-			);
-			path = Class;
-			sourceTree = "<group>";
-		};
-		1BA123C21D61C34B001FCD9E /* MyPaster */ = {
-			isa = PBXGroup;
-			children = (
-				1BA123C31D61C34B001FCD9E /* MyPaster.h */,
-				1BA123C41D61C34B001FCD9E /* MyPaster.m */,
-			);
-			path = MyPaster;
-			sourceTree = "<group>";
-		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
-				1BA123C11D61C336001FCD9E /* Class */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for MyPaster */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -141,7 +117,6 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1BA123C81D61C36C001FCD9E /* MyPaster.framework */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -417,7 +392,6 @@
 			files = (
 				6003F59E195388D20070C39A /* MyPasterAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* MyPasterViewController.m in Sources */,
-				1BA123C51D61C34B001FCD9E /* MyPaster.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

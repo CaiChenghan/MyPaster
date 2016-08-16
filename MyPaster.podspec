@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MyPaster'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'IOS贴图'
 
 # This description is used to generate tags and improve search results.
@@ -30,8 +30,10 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '7.0'
 
-  s.source_files = 'MyPaster/Frameworks/**/*'
-  
+  #s.source_files = 'MyPaster/Frameworks/**/*'
+
+  s.vendored_frameworks = 'MyPaster/*.framework'
+
   s.resource_bundles = {
 
   }

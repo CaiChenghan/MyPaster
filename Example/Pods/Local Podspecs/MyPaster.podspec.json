@@ -1,6 +1,6 @@
 {
   "name": "MyPaster",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "summary": "IOS贴图",
   "description": "IOS贴图类",
   "homepage": "https://github.com/CaiChenghan/MyPaster",
@@ -13,12 +13,12 @@
   },
   "source": {
     "git": "https://github.com/CaiChenghan/MyPaster.git",
-    "tag": "1.0.0"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "7.0"
   },
-  "source_files": "MyPaster/Frameworks/**/*",
+  "vendored_frameworks": "MyPaster/*.framework",
   "resource_bundles": {
   }
 }
