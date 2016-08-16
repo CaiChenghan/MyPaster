@@ -386,7 +386,6 @@
     {
         tpPoint.y = _contentImageView.bounds.size.height/2.0 - size.height/2.0;
     }
-    NSLog(@"%@-%@",NSStringFromCGRect(_contentImageView.frame),NSStringFromCGPoint(tpPoint));
     return tpPoint;
 }
 
