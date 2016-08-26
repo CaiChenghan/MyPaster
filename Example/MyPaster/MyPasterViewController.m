@@ -55,7 +55,9 @@
     UIBarButtonItem *rightItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:@selector(rightItemIsTouch)];
     
     UIBarButtonItem *addItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addItemIsTouch)];
-    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:addItem,rightItem, nil];
+    UIBarButtonItem *addItem2 = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(addItem2IsTouch)];
+    
+    self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:addItem2,addItem,rightItem, nil];
 }
 
 -(void)leftItemIsTouch
@@ -72,8 +74,68 @@
 
 -(void)addItemIsTouch
 {
-    [_myPaster addPaster:[UIImage imageNamed:[NSString stringWithFormat:@"paster_%d",(arc4random()%5)]]];
+    int type = arc4random()%2;
+    if (type == 0)
+    {
+        ImagePaster *imagePaster = [[ImagePaster alloc]init];
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"paster_%d",(arc4random()%5)]];
+        imagePaster.image = image;
+        [_myPaster addPaster:imagePaster];
+    }
+    else
+    {
+        [_myPaster addPaster:[self createTextPaster]];
+    }
 }
+
+/**
+ *  更改贴花文字
+ */
+-(void)addItem2IsTouch
+{
+    if (_myPaster.currentPaster.class == [TextPaster class])
+    {
+        _myPaster.currentPaster = [self createTextPaster];
+    }
+}
+
+-(TextPaster *)createTextPaster
+{
+    TextPaster *textPaster = [[TextPaster alloc]init];
+    int type = arc4random()%5;
+    if (type == 0)
+    {
+        textPaster.text = @"我爱你";
+        textPaster.textColor = [UIColor redColor];
+        textPaster.font = [UIFont systemFontOfSize:35];
+    }
+    else if (type == 1)
+    {
+        textPaster.text = @"我爱你我的祖国";
+        textPaster.textColor = [UIColor purpleColor];
+        textPaster.font = [UIFont boldSystemFontOfSize:35];
+    }
+    else if (type == 2)
+    {
+        textPaster.text = @"我爱你我的祖国，我要为你奋斗";
+        textPaster.textColor = [UIColor colorWithRed:221.0/255 green:6.0/255 blue:234.0/255 alpha:1];
+        textPaster.font = [UIFont systemFontOfSize:35];
+    }
+    else if (type == 3)
+    {
+        textPaster.text = @"Write the code.Change the world.";
+        textPaster.textColor = [UIColor colorWithRed:91.0/255 green:69.0/255 blue:200.0/255 alpha:1];
+        textPaster.font = [UIFont fontWithName:@"AmericanTypewriter-Bold" size:35];
+    }
+    else
+    {
+        textPaster.text = @"abc123@从来都是我的错";
+        textPaster.textColor = [UIColor colorWithRed:11.0/255 green:219.0/255 blue:65.0/255 alpha:1];
+        textPaster.font = [UIFont fontWithName:@"Georgia-Italic" size:35];
+    }
+    return textPaster;
+}
+
 
 #pragma mark - UIActionSheetDelegate
 

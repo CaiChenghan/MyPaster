@@ -9,7 +9,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.2)
   - FBSnapshotTestCase/SwiftSupport (2.1.2):
     - FBSnapshotTestCase/Core
-  - MyPaster (1.1.0)
+  - MyPaster (2.0.0)
   - Specta (1.0.5)
 
 DEPENDENCIES:
@@ -27,7 +27,7 @@ SPEC CHECKSUMS:
   Expecta: e1c022fcd33910b6be89c291d2775b3fe27a89fe
   Expecta+Snapshots: c343f410c7a6392f3e22e78f94c44b6c0749a516
   FBSnapshotTestCase: 918c55861356ee83aee7843d759f55a18ff6982b
-  MyPaster: 0d457f772876148b3ee6270e18ca7b4f7a19056d
+  MyPaster: b543689f673c199eed25cc0821dc812b95368bcb
   Specta: ac94d110b865115fe60ff2c6d7281053c6f8e8a2
 
 PODFILE CHECKSUM: cdc3f69e970b93e8ad46dba2b4d5159741251493
