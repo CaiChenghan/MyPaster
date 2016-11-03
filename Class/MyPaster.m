@@ -383,7 +383,7 @@
 /**
  *  获取贴花展示尺寸
  *
- *  @param image 贴花
+ *  @param paster 贴花
  *
  *  @return 贴花尺寸
  */

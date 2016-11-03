@@ -47,6 +47,11 @@
 }
 
 /**
+ *  背景图
+ */
+@property (nonatomic , strong) UIImageView *bkImageView;
+
+/**
  *  删除按钮
  */
 @property (nonatomic , strong) UIImageView *deleteView;
@@ -112,6 +117,13 @@
 
 -(void)initialView
 {
+    //背景图
+    _bkImageView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
+    _bkImageView.backgroundColor = [UIColor clearColor];
+    _bkImageView.contentMode = UIViewContentModeScaleAspectFill;
+    _bkImageView.clipsToBounds = YES;
+    [self addSubview:_bkImageView];
+    
     //贴花
     _contentView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.bounds.size.width, self.bounds.size.height)];
     _contentView.backgroundColor = [UIColor clearColor];
@@ -445,6 +457,8 @@
 -(void)setPaster:(Paster *)paster
 {
     _paster = paster;
+    _bkImageView.image = _paster.backgroundImage;
+    [self setNeedsLayout];
 }
 
 
@@ -487,6 +501,7 @@
     _sizeView.frame = CGRectMake(self.bounds.size.width - _iconSize.width, self.bounds.size.height - _iconSize.height, _iconSize.width, _iconSize.height);
     _rotateView.frame = CGRectMake(0, self.bounds.size.height - _iconSize.height, _iconSize.width, _iconSize.height);
     _contentView.frame = CGRectMake(_iconSize.width/2.0, _iconSize.height/2.0, self.bounds.size.width - _iconSize.width, self.bounds.size.height - _iconSize.height);
+    _bkImageView.frame = CGRectMake(_iconSize.width/2.0, _iconSize.height/2.0, self.bounds.size.width - _iconSize.width, self.bounds.size.height - _iconSize.height);
 }
 
 

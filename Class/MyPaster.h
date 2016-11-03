@@ -27,6 +27,11 @@
  */
 @property (nonatomic , assign) CGSize size;
 
+/**
+ *  贴花背景图 -- 默认为nil
+ */
+@property (nonatomic , strong) UIImage *backgroundImage;
+
 @end
 
 
