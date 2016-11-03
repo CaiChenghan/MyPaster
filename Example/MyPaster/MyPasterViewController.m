@@ -108,24 +108,28 @@
         textPaster.text = @"我爱你";
         textPaster.textColor = [UIColor redColor];
         textPaster.font = [UIFont systemFontOfSize:35];
+        textPaster.backgroundImage = [UIImage imageNamed:@"my_image"];
     }
     else if (type == 1)
     {
         textPaster.text = @"我爱你我的祖国";
         textPaster.textColor = [UIColor purpleColor];
         textPaster.font = [UIFont boldSystemFontOfSize:35];
+        textPaster.backgroundImage = [UIImage imageNamed:@"my_image"];
     }
     else if (type == 2)
     {
         textPaster.text = @"我爱你我的祖国，我要为你奋斗";
         textPaster.textColor = [UIColor colorWithRed:221.0/255 green:6.0/255 blue:234.0/255 alpha:1];
         textPaster.font = [UIFont systemFontOfSize:35];
+        textPaster.backgroundImage = [UIImage imageNamed:@"my_image"];
     }
     else if (type == 3)
     {
         textPaster.text = @"Write the code.Change the world.";
         textPaster.textColor = [UIColor colorWithRed:91.0/255 green:69.0/255 blue:200.0/255 alpha:1];
         textPaster.font = [UIFont fontWithName:@"AmericanTypewriter-Bold" size:35];
+        textPaster.backgroundImage = [UIImage imageNamed:@"my_image"];
     }
     else
     {

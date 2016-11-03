@@ -17,7 +17,7 @@ MyPaster is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'MyPaster', '~>2.0.0'
+pod 'MyPaster', '~>2.1.0'
 ```
 
 ## Author
@@ -29,5 +29,6 @@ pod 'MyPaster', '~>2.0.0'
 MyPaster is available under the MIT license. See the LICENSE file for more info.
 
 ## 更新说明
+- 2.0.0 新增贴图背景图支持。
 - 2.0.0 MyPaster重构，使之能支持文字类型贴图。
 - 1.1.0 MyPaster。

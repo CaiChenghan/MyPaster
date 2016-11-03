@@ -6,11 +6,11 @@
 	<dict>
 		<key>Headers/MyPaster.h</key>
 		<data>
-		Xt8K/QeVJox6g/yi3iYf2UFCnnI=
+		VBLxS9orIRZFp7C9si89YEAaj9g=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		xjth7Sxsu6WZuWNkfVH6YmFuVOY=
+		bNNBdhrEVLhd65oEjAmPvfee5Dg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -23,11 +23,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Xt8K/QeVJox6g/yi3iYf2UFCnnI=
+			VBLxS9orIRZFp7C9si89YEAaj9g=
 			</data>
 			<key>hash2</key>
 			<data>
-			K4QsTYC9Rksvb+Oarje8wBCE34JQwOvKts3ph+9bGas=
+			2HaRHE8ZdLeImzy3NUg4wIvhRPDs09jOU4hKaEVlRd8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -59,6 +59,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^version.plist$</key>
 		<true/>
@@ -104,6 +109,11 @@
 			<true/>
 			<key>weight</key>
 			<real>1100</real>
+		</dict>
+		<key>^Base\.lproj/</key>
+		<dict>
+			<key>weight</key>
+			<real>1010</real>
 		</dict>
 		<key>^Info\.plist$</key>
 		<dict>
